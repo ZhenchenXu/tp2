@@ -6,10 +6,6 @@
 #Variables et imports
 import random
 playing = True
-global number
-number = 0
-global number1
-global number2
 
 #ce fonction est fait pour demander l'usager de choisirt un range pour le number
 def range():
@@ -18,7 +14,7 @@ def range():
     print('le nombre à deviner est choisi, ce sera entre ' + str(number1) + ' et ' + str(number2))
     return random.randint(number1, number2)
 
-print('Bievenue au Number_Guess, ici tu devine un nombre de 0 à 1000 (inclus) et essaye de deviner le chiffre en le moins de essaies possibles. ')
+print('Bievenue au Number_Guess, ici tu devine un nombre de range que vous input et essaye de deviner le chiffre en le moins de essaies possibles. ')
 
 #fonction pour voir si le joueur veut recommencer une autre partie
 while playing == True:
@@ -44,6 +40,3 @@ while playing == True:
     if quit == '2':
         #la partie termine
         playing = False
-    else:
-        #une nouvelle partie
-        playing = True
