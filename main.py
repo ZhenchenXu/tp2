@@ -22,7 +22,7 @@ print('Bievenue au Number_Guess, ici tu devine un nombre de 0 à 1000 (inclus) e
 
 #fonction pour voir si le joueur veut recommencer une autre partie
 while playing == True:
-    #fonction en haut
+    #fonction importé pour choisir le range
     number = range()
     Essai = 0
     guess = 'x'
